@@ -1,0 +1,120 @@
+/* Login Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0a3dff, #0096ff);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 400px;
+  background: #8fb5ee;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #234;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+  margin-top: 6px;
+  border: 1px solid #c6d4ef;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #e9f1ff;
+  box-sizing: border-box;
+}
+.camera-section {
+  margin-top:14px;
+  text-align:center;
+}
+
+#video {
+  width:100%;
+  max-width:360px;
+  height:220px;
+  background:#000;
+  border-radius:8px;
+  border:1px solid #ccc;
+  display:block;
+  margin:8px auto;
+  object-fit:cover;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 42px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #5b6b7f;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.toggle-password:hover {
+  color: #000;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #0a73ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.submit-btn:hover {
+  background: #005be3;
+}
+
+.redirect-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.redirect-link {
+  color: #0618ff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: 0.2s ease;
+}
+
+.redirect-link:hover {
+  text-decoration: underline;
+  color: #0004ff;
+}

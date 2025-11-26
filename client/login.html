@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="/css/login.css">
+
+  <!-- Load face-api first -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+
+  <!-- Your login script -->
+  <script defer src="/js/login.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Welcome Back</h2>
+
+  <form id="loginForm">
+  <label>Email</label>
+  <input type="email" id="email" placeholder="Enter your email" required>
+
+  <label>Password</label>
+  <div class="password-wrapper">
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+  </div>
+
+  <button type="submit" class="submit-btn">Log In</button>
+</form>
+
+<div class="camera-section">
+  <video id="video" autoplay muted playsinline></video>
+  <button id="faceLoginBtn" class="submit-btn" style="margin-top:10px;">
+    Log In with Face Recognition
+  </button>
+  <p id="faceLoginStatus">Camera ready</p>
+</div>
+
+<p class="redirect-text">Don’t have an account?
+  <a href="/signup.html" class="redirect-link">Sign Up</a>
+</p>
+
+</body>
+</html>

@@ -1,14 +1,31 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema({
-  fullName: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
-  mobile: { type: String, default: null },
-  password: { type: String, required: true },
-  role: { type: String, enum: ["resident", "admin"], default: "resident" },
+const userSchema = new mongoose.Schema({
+  fullName: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  mobile: {
+    type: String,
+    required: false
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  faceEmbedding: {
+    type: [Number], // Must be an array of numbers
+    required: true  // This stops signup without face capture
+  },
+  role: {
+    type: String,
+    default: "resident"
+  }
+}, { timestamps: true });
 
-  // Face recognition embedding (optional)
-  faceEmbedding: { type: [Number], default: null }
-});
-
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", userSchema);
