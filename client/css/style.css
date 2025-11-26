@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1A2A33;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #0077ff;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background-color: #005fcc;
+}
